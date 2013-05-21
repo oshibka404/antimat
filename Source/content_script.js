@@ -50,7 +50,7 @@ function makeItCultural(textNode)
 	text = text.replace(/(О|А|При)хуеть/g, "С ума сойти");
 	text = text.replace(/(о|а|при)хуеть/i, "с ума сойти");
 	text = text.replace(/(О|А|При)хуе(л(а|)|ю|ешь|вае(шь|те|т))/g, randomWord("Не в себе", "В шоке"));
-	text = text.replace(/(о|а|при)хуе(л(а|)|ю|ешь|вае(шь|те|т))/i, randomWord("Не в себе", "В шоке"));
+	text = text.replace(/(о|а|при)хуе(л(а|)|ю|ешь|вае(шь|те|т))/i, randomWord("не в себе", "в шоке"));
 	text = text.replace(/Ху(е|и)(пл(ё|е)т|л(а|о))/g, "Дурак");
 	text = text.replace(/ху(е|и)(пл(ё|е)т|л(а|о))/i, "дурак");
 
