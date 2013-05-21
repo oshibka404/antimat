@@ -32,8 +32,8 @@ function makeItCultural(textNode)
 	var text = textNode.nodeValue;
 
 //Хуй и его производные
-	text = text.replace(/(\s|^)Хуй/g, randomWord([" Пенис", " Член", " Детородный орган"]));
-	text = text.replace(/(\s|^)хуй/i, randomWord([" пенис", " член", " детородный орган"]));
+	text = text.replace(/(\s|^)Ху(й|я|ю|и|е)/g, randomWord([" Пенис", " Член", " Детородный орган"]));
+	text = text.replace(/(\s|^)ху(й|я|ю|и|е)/i, randomWord([" пенис", " член", " детородный орган"]));
 	text = text.replace(/Хуяр/g, "Фигар");
 	text = text.replace(/хуяр/i, "фигар");
 	text = text.replace(/(По(\s|)ху(й|я|ям|ю)($|.|\s|,|\?|!)|До пизды)/g, randomWord(["Неважно", "Индифферентно", "Безразлично"]));
