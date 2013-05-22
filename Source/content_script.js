@@ -32,8 +32,20 @@ function makeItCultural(textNode)
 	var text = textNode.nodeValue;
 
 //Хуй и его производные
-	text = text.replace(/(\s|^)Ху(й|я|ю|и|е)/g, randomWord([" Пенис", " Член", " Детородный орган"]));
-	text = text.replace(/(\s|^)ху(й|я|ю|и|е)/i, randomWord([" пенис", " член", " детородный орган"]));
+	text = text.replace(/(\s|^|"|«|\()Хуй/g, randomWord(["Пенис", "Член", "Детородный орган"]));
+	text = text.replace(/(\s|^|"|«|\()Хуя/g, randomWord(["Пениса", "Члена"])); //также сработает с "хуями"
+	text = text.replace(/(\s|^|"|«|\()Хуи/g, randomWord(["Пенисы", "Члены", "Детородные органы"]));
+	text = text.replace(/(\s|^|"|«|\()Хуе/g, randomWord(["Пенисе", "Члене", "Детородном органе"]));
+	text = text.replace(/(\s|^|"|«|\()Хую/g, randomWord(["Пенису", "Члену", "Детородному орган"]));
+	text = text.replace(/(\s|^|"|«|\()Ху(е|ё)в/g, randomWord(["Пенисов", "Членов", "Детородных органов"]));
+	text = text.replace(/(\s|^|"|«|\()Хуем/g, randomWord(["Пенисом", "Членом", "Детородным органом"]));
+	text = text.replace(/(\s|^|"|«|\()хуй/i, randomWord(["пенис", "член", "детородный орган"]));
+	text = text.replace(/(\s|^|"|«|\()хуя/i, randomWord(["пениса", "члена"])); //также сработает с "хуями"
+	text = text.replace(/(\s|^|"|«|\()хуи/i, randomWord(["пенисы", "члены", "детородные органы"]));
+	text = text.replace(/(\s|^|"|«|\()хуе/i, randomWord(["пенисе", "члене", "детородном органе"]));
+	text = text.replace(/(\s|^|"|«|\()хую/i, randomWord(["пенису", "члену", "детородному орган"]));
+	text = text.replace(/(\s|^|"|«|\()ху(е|ё)в/i, randomWord(["пенисов", "членов", "детородных органов"]));
+	text = text.replace(/(\s|^|"|«|\()хуем/i, randomWord(["пенисом", "членом", "детородным органом"]));
 	text = text.replace(/Хуяр/g, "Фигар");
 	text = text.replace(/хуяр/i, "фигар");
 	text = text.replace(/(По(\s|)ху(й|я|ям|ю)($|.|\s|,|\?|!)|До пизды)/g, randomWord(["Неважно", "Индифферентно", "Безразлично"]));
