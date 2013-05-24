@@ -92,31 +92,35 @@ function makeItCultural(textNode)
 
 //Ебать и производные
 	text = text.replace(/Ебаться/g, randomWord(["Заниматься любовью", "Заниматься сексом"]));
-	text = text.replace(/ебаться/g, randomWord(["заниматься любовью", "заниматься сексом"]));
-	text = text.replace(/Ебануться/, randomWord(["С ума сойти"]));
-	text = text.replace(/ебануться/, randomWord(["с ума сойти"]));
-
-	text = text.replace(/(Еба|Ёб)нул/, randomWord(["Помешал", ""]));
-	text = text.replace(/(еба|ёб)нул/, randomWord(["помешал", ""]));
+	text = text.replace(/ебаться/i, randomWord(["заниматься любовью", "заниматься сексом"]));
+	text = text.replace(/Ебануться/g, randomWord(["С ума сойти"]));
+	text = text.replace(/ебануться/i, randomWord(["с ума сойти"]));
+	text = text.replace(/(Еба|Ёб)нул/, randomWord(["Помешал"]));
+	text = text.replace(/(еба|ёб)нул/i, randomWord(["помешал"]));
 	text = text.replace(/(Заеб(ись|ок|ато|ово)|Охуенчик)/g, randomWord(["Хорошо", "Замечательно", "Великолепно", "Прекрасно", "Восхитительно", "Отлично", "Превосходно"]));
-	text = text.replace(/(заеб(ись|ок|ато|ово)|охуенчик)/g, randomWord(["хорошо", "замечательно", "великолепно", "прекрасно", "восхитительно", "отлично", "превосходно"]));
+	text = text.replace(/(заеб(ись|ок|ато|ово)|охуенчик)/i, randomWord(["хорошо", "замечательно", "великолепно", "прекрасно", "восхитительно", "отлично", "превосходно"]));
 	text = text.replace(/Заеба/g, randomWord(["Надое", "Доста"]));
-	text = text.replace(/заеба/g, randomWord(["надое", "доста"]));
+	text = text.replace(/заеба/i, randomWord(["надое", "доста"]));
+	text = text.replace(/Про(е|ё)ба/g, "Потеря");
+	text = text.replace(/про(е|ё)ба/i, "потеря");	
+	text = text.replace(/На(е|ё)бан(н|)/g, randomWord(["Обманут"]));
+	text = text.replace(/на(е|ё)бан(н|)/i, randomWord(["обманут"]));
+	text = text.replace(/На(е|ё)ба/g, randomWord(["Обману"]));
+	text = text.replace(/на(е|ё)ба/i, randomWord(["обману"]));
 	text = text.replace(/На(е|ё)б/g, randomWord(["Обман"]));
-	text = text.replace(/на(е|ё)б/g, randomWord(["обман"]));
+	text = text.replace(/на(е|ё)б/i, randomWord(["обман"]));
 	text = text.replace(/(Вы|От(ъ|))еба/g, "Поиме");
 	text = text.replace(/(вы|от(ъ|))еба/i, "поиме");
 	text = text.replace(/От(ъ|)ебись/g, "Отстань");
 	text = text.replace(/от(ъ|)ебись/i, "отстань");
 	text = text.replace(/От(ъ|)ебитесь/g, "Отстаньте");	
 	text = text.replace(/от(ъ|)ебитесь/g, "отстаньте");
-	
 	text = text.replace(/Разъеба/g, randomWord(["Разруши", "Уничтожи"]));
 	text = text.replace(/разъеба/i, randomWord(["разруши", "уничтожи"]));
 	text = text.replace(/Разъ(е|ё)быва/g, randomWord(["Разруша", "Уничтожа"]));
 	text = text.replace(/разъ(е|ё)быва/i, randomWord(["разруша", "уничтожа"]));
-	text = text.replace(/((Д(о|а)лб(о|а)|У)((ё|е)|йо)(б|п)(ик|ок|ище|ан|))/g, "Дурак");
-	text = text.replace(/((д(о|а)лб(о|а)|у)((ё|е)|йо)(б|п)(ик|ок|ище|ан|))/i, "дурак");
+	text = text.replace(/((Д(о|а)лб(о|а)|У)((ё|е)|йо)(б|п)(ик|ок|ищ(е|)|ан|))/g, "Дурак");
+	text = text.replace(/((д(о|а)лб(о|а)|у)((ё|е)|йо)(б|п)(ик|ок|ищ(е|)|ан|))/i, "дурак");
 	text = text.replace(/(Въ|у|Пере)еб(а|о|ну)(ши|)/g, randomWord(["Удари", "Стукну"]));
 	text = text.replace(/(Въ|у|Пере)еб(а|о|ну)(ши|)/i, randomWord(["удари", "стукну"]));
 	text = text.replace(/(Въ|у)(е|ё)б/g, "Стукн");
