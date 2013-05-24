@@ -69,6 +69,8 @@ function makeItCultural(textNode)
 //Пизда и её производные
 	text = text.replace(/Пиздец/g, randomWord(["Ужас", "Кошмар"]));
 	text = text.replace(/пиздец/i, randomWord(["ужас", "кошмар"]));
+	text = text.replace(/Пизд(о|а)бол/g, randomWord(["Лжец", "Врун", "Болтун"]));
+	text = text.replace(/пизд(о|а)бол/i, randomWord(["лжец", "врун", "болтун"]));
 	text = text.replace(/Отпизди$/g, randomWord(["Избей", "Побей"]));
 	text = text.replace(/отпизди$/i, randomWord(["избей", "побей"]));
 	text = text.replace(/Отпиздят/g, randomWord(["Изобьют", "Побьют"]));
