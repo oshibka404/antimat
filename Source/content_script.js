@@ -71,6 +71,12 @@ function makeItCultural(textNode)
 	text = text.replace(/пиздец/i, randomWord(["ужас", "кошмар"]));
 	text = text.replace(/Пизд(о|а)бол/g, randomWord(["Лжец", "Врун", "Болтун"]));
 	text = text.replace(/пизд(о|а)бол/i, randomWord(["лжец", "врун", "болтун"]));
+	text = text.replace(/Пизд(е|ё)ж/g, randomWord(["Ложь", "Неправда"]));
+	text = text.replace(/пизд(е|ё)ж/i, randomWord(["ложь", "неправда"]));
+	text = text.replace(/Пиздеть/g, randomWord(["Врать", "Лгать", "Пустословить"]));
+	text = text.replace(/пиздеть/i, randomWord(["Врать", "Лгать", "Пустословить"]));
+	text = text.replace(/Пиздишь/g, randomWord(["Врёшь", "Лжёшь", "Пустословишь"]));
+	text = text.replace(/пиздишь/i, randomWord(["Врёшь", "Лжёшь", "Пустословишь"]));
 	text = text.replace(/Отпизди$/g, randomWord(["Избей", "Побей"]));
 	text = text.replace(/отпизди$/i, randomWord(["избей", "побей"]));
 	text = text.replace(/Отпиздят/g, randomWord(["Изобьют", "Побьют"]));
