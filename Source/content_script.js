@@ -143,8 +143,8 @@ function makeItCultural(textNode)
 	text = text.replace(/(^|\s)еб(е|ё)/i, " сношае");
 
 //Прочие
-	text = text.replace(/Пид(о|а)р(|ас|ок)/g, randomWord(["Гей", "Гомосексуалист"]));
-	text = text.replace(/пид(о|а)р(|ас|ок)/i, randomWord(["гей", "гомосексуалист"]));
+	text = text.replace(/Пид(о|а)р(ас|ок|)/g, randomWord(["Гей", "Гомосексуалист"]));
+	text = text.replace(/пид(о|а)р(ас|ок|)/i, randomWord(["гей", "гомосексуалист"]));
 	text = text.replace(/(^|\s)Муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "Подлец");
 	text = text.replace(/(^|\s)муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "подлец");
 	text = text.replace(/Говн/g, "Дерьм");
