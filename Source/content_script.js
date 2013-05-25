@@ -137,18 +137,20 @@ function makeItCultural(textNode)
 	text = text.replace(/еб(а|)л(о|ище|ет)/i, "лицо");
 	text = text.replace(/(Е|Ё)бл(а|ища|еты)/g, "Лица");
 	text = text.replace(/(е|ё)бл(а|ища|еты)/i, "лица");
-	text = text.replace(/(^|\s)(Е|Ё)ба/g, " Сноша");
-	text = text.replace(/(^|\s)(е|ё)ба/i, " сноша");
-	text = text.replace(/(^|\s)Еб(е|ё)/g, " сношае");
-	text = text.replace(/(^|\s)еб(е|ё)/i, " сношае");
+	text = text.replace(/(\s|^|"|«|\()(Е|Ё)ба/g, " Сноша");
+	text = text.replace(/(\s|^|"|«|\()(е|ё)ба/i, " сноша");
+	text = text.replace(/(\s|^|"|«|\()Еб(е|ё)/g, " сношае");
+	text = text.replace(/(\s|^|"|«|\()еб(е|ё)/i, " сношае");
 
 //Прочие
-	text = text.replace(/Пид(о|а)р(ас|ок|)/g, randomWord(["Гей", "Гомосексуалист"]));
-	text = text.replace(/пид(о|а)р(ас|ок|)/i, randomWord(["гей", "гомосексуалист"]));
-	text = text.replace(/(^|\s)Муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "Подлец");
-	text = text.replace(/(^|\s)муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "подлец");
+	text = text.replace(/(\s|^|"|«|\()Пид(о|а)р(ас|ок|)/g, randomWord(["Гей", "Гомосексуалист"]));
+	text = text.replace(/(\s|^|"|«|\()пид(о|а)р(ас|ок|)/i, randomWord(["гей", "гомосексуалист"]));
+	text = text.replace(/(\s|^|"|«|\()Муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "Подлец");
+	text = text.replace(/(\s|^|"|«|\()муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "подлец");
 	text = text.replace(/Говн/g, "Дерьм");
 	text = text.replace(/говн/i, "дерьм");
+	text = text.replace(/(\s|^|"|«|\()Блядь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
+	text = text.replace(/(\s|^|"|«|\()блядь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
 
 	textNode.nodeValue = text;
 }
