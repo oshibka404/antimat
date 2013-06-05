@@ -155,8 +155,8 @@ function makeItCultural(textNode)
 	text = text.replace(/говн/i, "дерьм");
 	text = text.replace(/(\s|^|"|«|\()Блядь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
 	text = text.replace(/(\s|^|"|«|\()блядь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
-	text = text.replace(/Г(а|о)ндон/g, randomword(["Презерватив", "Контрацептив"]));
-	text = text.replace(/г(а|о)ндон/g, randomword(["презерватив", "контрацептив"]));
+	text = text.replace(/Г(а|о)ндон/g, randomWord(["Презерватив", "Контрацептив"]));
+	text = text.replace(/г(а|о)ндон/g, randomWord(["презерватив", "контрацептив"]));
 
 	textNode.nodeValue = text;
 }
