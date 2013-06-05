@@ -51,6 +51,8 @@ function makeItCultural(textNode)
 	text = text.replace(/(о|а|при)хуе(л(а|)|ю|ешь|вае(шь|те|т))/i, randomWord(["не в себе", "в шоке"]));
 	text = text.replace(/Ху(е|и|й)(пл(ё|е)т|л(а|о))/g, randomWord(["Дурак", "Подлец"]));
 	text = text.replace(/ху(е|и|й)(пл(ё|е)т|л(а|о))/i, randomWord(["дурак", "подлец"]));
+	text = text.replace(/Ху(е|и)сос/g, "Гомосексуалист");
+	text = text.replace(/ху(е|и)сос/g, "гомосексуалист");
 	text = text.replace(/(\s|^|"|«|\()Хуй/g, randomWord(["Пенис", "Член", "Детородный орган"]));
 	text = text.replace(/(\s|^|"|«|\()Хуя/g, randomWord(["Пениса", "Члена"])); //также сработает с "хуями"
 	text = text.replace(/(\s|^|"|«|\()Хуи/g, randomWord(["Пенисы", "Члены", "Детородные органы"]));
@@ -153,6 +155,8 @@ function makeItCultural(textNode)
 	text = text.replace(/говн/i, "дерьм");
 	text = text.replace(/(\s|^|"|«|\()Блядь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
 	text = text.replace(/(\s|^|"|«|\()блядь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
+	text = text.replace(/Г(а|о)ндон/g, randomword(["Презерватив", "Контрацептив"]));
+	text = text.replace(/г(а|о)ндон/g, randomword(["презерватив", "контрацептив"]));
 
 	textNode.nodeValue = text;
 }
