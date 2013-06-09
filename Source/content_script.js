@@ -153,10 +153,12 @@ function makeItCultural(textNode)
 	text = text.replace(/(\s|^|"|«|\()муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "подлец");
 	text = text.replace(/Говн/g, "Дерьм");
 	text = text.replace(/говн/i, "дерьм");
-	text = text.replace(/(\s|^|"|«|\()Блядь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
-	text = text.replace(/(\s|^|"|«|\()блядь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
+	text = text.replace(/(\s|^|"|«|\()Бля(д|т)ь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
+	text = text.replace(/(\s|^|"|«|\()бля(д|т)ь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
 	text = text.replace(/Г(а|о)ндон/g, randomWord(["Презерватив", "Контрацептив"]));
 	text = text.replace(/г(а|о)ндон/g, randomWord(["презерватив", "контрацептив"]));
+	text = text.replace(/Бля(\s|^|"|,|!|?|.|\)/g, randomword(["Чёрт подери", "Господи"]));
+	text = text.replace(/(\s|^|"|«|\()бля(\s|^|"|,|!|?|.|\)/i, randomword(["чёрт подери", "господи"]));
 
 	textNode.nodeValue = text;
 }
