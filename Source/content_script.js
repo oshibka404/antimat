@@ -163,8 +163,10 @@ function makeItCultural(textNode)
 	text = text.replace(/(\s|^|"|«|\()пид(о|а)р(ас|ок|)/i, randomWord(["гей", "гомосексуалист"]));
 	text = text.replace(/(\s|^|"|«|\()Муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "Подлец");
 	text = text.replace(/(\s|^|"|«|\()муд(а(ч(о|ё|и)|)к|ил(а|о)|озвон)/g, "подлец");
-	text = text.replace(/Говн/g, "Дерьм");
-	text = text.replace(/говн/i, "дерьм");
+	text = text.replace(/(\s|^|"|«|\()Говн/g, "Дерьм");
+	text = text.replace(/(\s|^|"|«|\()говн/i, "дерьм");
+	text = text.replace(/(\s|^|"|«|\()Гов(е|ё)(нн|н)/g, "Дерьмов");
+	text = text.replace(/(\s|^|"|«|\()гов(е|ё)(нн|н)/i, "дерьмов");
 	text = text.replace(/(\s|^|"|«|\()Бля(д|т)ь/g, randomWord(["Шлюха", "Проститутка", "Профурсетка", "Гулящая женщина"]));
 	text = text.replace(/(\s|^|"|«|\()бля(д|т)ь/i, randomWord(["шлюха", "проститутка", "профурсетка", "гулящая женщина"]));
 	text = text.replace(/Г(а|о)ндон/g, randomWord(["Презерватив", "Контрацептив"]));
